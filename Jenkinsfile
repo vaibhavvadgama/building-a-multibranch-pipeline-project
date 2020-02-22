@@ -1,10 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Compile') {
             steps {
-                sh 'echo "Hello world!"'
-                sh 'echo "Build application!"'
+                sh 'echo "Build application"'
+            }
+        }
+        stage('Package') {
+            steps {
+                sh 'echo "Building package"'
             }
         }
     }
